@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&amp;family=Quicksand:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary": "#306385", "surface-bright": "#f9f9ff", "primary-fixed": "#ffd9e3", "outline-variant": "#d9c0c6", "outline": "#867277", "on-surface": "#091b38", "tertiary-fixed-dim": "#fab2d1", "surface-variant": "#d7e2ff", "on-tertiary-fixed": "#370923", "on-surface-variant": "#544247", "surface-tint": "#9b3e64", "surface-container-lowest": "#ffffff", "secondary-container": "#a6d7fe", "on-primary-container": "#7a2349", "surface-container": "#e8edff", "surface-container-highest": "#d7e2ff", "primary": "#9b3e64", "on-secondary": "#ffffff", "on-error-container": "#93000a", "inverse-surface": "#20304e", "on-tertiary": "#ffffff", "primary-fixed-dim": "#ffb0ca", "error": "#ba1a1a", "on-secondary-fixed": "#001e2f", "primary-container": "#ff8fb8", "on-primary-fixed": "#3e001f", "error-container": "#ffdad6", "secondary-fixed-dim": "#9bccf3", "tertiary": "#864c67", "inverse-on-surface": "#edf0ff", "surface": "#f9f9ff", "on-primary": "#ffffff", "surface-dim": "#cadaff", "on-secondary-fixed-variant": "#104b6c", "background": "#f9f9ff", "on-primary-fixed-variant": "#7d264c", "on-tertiary-container": "#68334d", "on-secondary-container": "#2b5e80", "tertiary-container": "#e49ebc", "secondary-fixed": "#c9e6ff", "surface-container-low": "#f1f3ff", "on-background": "#091b38", "on-tertiary-fixed-variant": "#6b354f", "surface-container-high": "#e0e8ff", "on-error": "#ffffff", "tertiary-fixed": "#ffd8e6", "inverse-primary": "#ffb0ca" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "gutter-mobile": "1rem", "margin-mobile": "1.25rem", "space-sm": "0.75rem", "space-xl": "3rem", "space-lg": "2rem", "margin": "2.5rem", "space-md": "1.25rem", "gutter": "1.5rem", "space-xs": "0.375rem" }, fontFamily: { "headline-lg": ["Comfortaa"], "display-lg-mobile": ["Comfortaa"], "body-md": ["Quicksand"], "label-lg": ["Quicksand"], "label-md": ["Quicksand"], "headline-md": ["Comfortaa"], "label-sm": ["Quicksand"], "body-sm": ["Quicksand"], "display-lg": ["Comfortaa"], "headline-lg-mobile": ["Comfortaa"], "headline-sm": ["Comfortaa"], "body-lg": ["Quicksand"] }, fontSize: { "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "display-lg-mobile": ["34px", { "lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "500" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "700" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.03em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "700" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "500" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;background:linear-gradient(180deg, #d7e2ff 0%, #f9f9ff 45%, #ffd9e3 100%);min-height:100vh;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="text-on-surface font-body-md text-body-md flex flex-col relative select-none"><main class="flex flex-col relative w-full pt-safe pb-safe min-h-screen"><div class="flex flex-col w-full relative overflow-hidden px-4 py-6 space-y-10 max-w-md mx-auto select-none" id="scrapbook-root">
+<!-- Ambient Audio Floating Charm -->
+<aside class="fixed top-4 right-4 z-40">
+<button aria-label="Nyalakan Musik Romantis" class="relative group flex items-center justify-center w-11 h-11 rounded-full bg-surface-container-lowest/80 backdrop-blur-md shadow-lg transition-transform duration-300 hover:scale-110 active:scale-95 text-primary" id="music-charm">
+<span class="material-symbols-outlined text-[20px] transition-transform duration-500" id="music-icon" style="font-variation-settings: 'FILL' 1;">music_note</span>
+<span class="absolute -top-1 -right-1 flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+</span>
+</button>
+</aside>
+<!-- SECTION 1: HERO / OPENING ENVELOPE -->
+<section class="flex flex-col items-center text-center pt-3 relative" id="hero-section">
+<!-- Top cute sticker tags -->
+<div class="flex items-center gap-2 mb-4">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm shadow-sm transform -rotate-2">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+        Hanya untukmu
+      </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm shadow-sm transform rotate-3">
+<span class="material-symbols-outlined text-[14px]">favorite</span>
+        100% dari hati
+      </span>
+</div>
+<!-- Hero Title -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2 tracking-normal">
+      Hai, <span class="text-primary underline decoration-primary-container decoration-wavy decoration-2">Kamu</span> 💌
+    </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs mb-6 leading-relaxed">
+      Aku punya satu rahasia kecil yang udah lama banget pengen kusampaikan...
+    </p>
+<!-- Animated Envelope Interactive Centerpiece -->
+<div class="relative my-4 cursor-pointer group" id="envelope-trigger">
+<!-- Glow aura behind envelope -->
+<div class="absolute inset-0 bg-primary-container/40 rounded-3xl blur-2xl transform scale-110 transition-transform group-hover:scale-125"></div>
+<!-- Illustrated Envelope Base Card -->
+<div class="relative w-64 h-48 bg-gradient-to-br from-surface-container-lowest to-primary-fixed/40 rounded-3xl p-5 shadow-xl flex flex-col items-center justify-center transition-all duration-300 transform group-hover:-translate-y-1">
+<!-- Washi tape decoration top -->
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 w-24 h-6 bg-secondary-container/70 rounded-sm transform -rotate-1 shadow-sm flex items-center justify-center opacity-90">
+<div class="w-full border-dashed border-t-2 border-surface-container-lowest/60"></div>
+</div>
+<div class="w-20 h-20 rounded-full bg-primary-fixed flex items-center justify-center shadow-inner mb-2 animate-bounce">
+<span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">mark_email_unread</span>
+</div>
+<span class="font-label-md text-label-md text-primary tracking-wide flex items-center gap-1">
+          Ketuk untuk buka
+          <span class="material-symbols-outlined text-sm">touch_app</span>
+</span>
+</div>
+</div>
+<!-- Action button -->
+<button class="mt-4 px-8 py-3.5 rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg shadow-lg shadow-primary-container/50 hover:bg-primary hover:text-on-primary transition-all duration-300 transform active:scale-95 flex items-center gap-2" id="open-letter-btn">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">favorite</span>
+      Buka ya 💗
+    </button>
+</section>
+<!-- SECTION 2: SWEET MESSAGE / HANDWRITTEN LOVE LETTER -->
+<section class="flex flex-col relative pt-4" id="letter-section">
+<!-- Washi tape corner pins -->
+<div class="relative bg-surface-container-lowest/90 backdrop-blur-md rounded-2xl p-6 sm:p-7 shadow-xl">
+<!-- Tape top-left -->
+<div class="absolute -top-3 -left-3 w-16 h-5 bg-tertiary-fixed/80 rounded-sm transform -rotate-12 shadow-sm"></div>
+<!-- Tape top-right -->
+<div class="absolute -top-2 -right-3 w-14 h-5 bg-secondary-fixed/80 rounded-sm transform rotate-6 shadow-sm"></div>
+<!-- Letter Header -->
+<div class="flex items-center justify-between pb-3 mb-4">
+<span class="font-headline-sm text-headline-sm text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">favorite</span>
+          Sepucuk Surat Buatmu
+        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2.5 py-1 rounded-full">
+          Untuk Hari Ini &amp; Seterusnya
+        </span>
+</div>
+<!-- Letter Body with faux notebook lines feel -->
+<div class="space-y-4 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+<p>
+          Dari sekian banyak orang di dunia ini, entah kenapa pandanganku selalu berakhir dan berhenti di kamu.
+        </p>
+<p class="bg-surface-container-low/60 p-3.5 rounded-xl">
+          Setiap hari yang kita lewati—dari obrolan random pagi hari sampai percakapan kecil larut malam—selalu berhasil bikin aku tersenyum sendiri kayak orang paling beruntung di bumi.
+        </p>
+<p>
+          Kehadiran kamu itu kayak secangkir cokelat hangat di hari hujan: bikin hatiku tenang, selalu aman, dan merasa pulang. Terima kasih banyak ya sudah jadi bagian paling indah dalam hariku...
+        </p>
+</div>
+<!-- Letter Signature -->
+<div class="mt-6 pt-4 flex flex-col items-end text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant italic">Dengan tulus,</span>
+<span class="font-label-lg text-label-lg text-primary flex items-center gap-1 mt-0.5">
+          Dari seseorang yang selalu mengagumimu 🌷
+        </span>
+</div>
+</div>
+</section>
+<!-- SECTION 3: PHOTO MEMORIES (POLAROID SCRAPBOOK) -->
+<section class="flex flex-col space-y-4">
+<div class="text-center space-y-1">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-bold">Momen Berharga</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Galeri Kecil Kita 📸</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Setiap detik sama kamu selalu jadi memori favoritku.</p>
+</div>
+<!-- Polaroids Grid / Stack -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-5 pt-2">
+<!-- Polaroid 1 -->
+<div class="relative bg-surface-container-lowest p-3 pb-5 rounded-2xl shadow-md transform -rotate-2 hover:rotate-0 transition-transform duration-300">
+<!-- Washi Tape -->
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 w-14 h-4 bg-primary-fixed/80 rounded-sm rotate-3 shadow-xs"></div>
+<div class="w-full h-44 rounded-xl overflow-hidden mb-3 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A soft pastel kawaii anime style illustration of two lovers sharing sweet soft-serve ice cream on a sunny whimsical afternoon, pastel pink and baby blue tones, luminous lighting, cute cozy romantic memory" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwdAtNmcylTnfBGIBKBtInHz7fY7QhLV4C-YKYrgOhC289XpSyRLrlxSzBhOSfZEIqw7Ray1--oRJuup6qP2nncF7GOyntBm0ylchQlN2xsm8pr2pjYxPKQV9V3bYA403kbzNHo3eEUiBVwbBbCC6cCs0OvF7xSVRe-82FX0aVqnks0G0ZA5lR7otfQ3bPJzdDFSG42xlbYkPA8qR2CjmFx3ljtIbM54jpUtnb3lG0"/>
+</div>
+<p class="font-label-md text-label-md text-on-surface text-center px-1">
+          Hari pertama kita jalan berdua 🍦
+        </p>
+</div>
+<!-- Polaroid 2 -->
+<div class="relative bg-surface-container-lowest p-3 pb-5 rounded-2xl shadow-md transform rotate-2 hover:rotate-0 transition-transform duration-300">
+<!-- Washi Tape -->
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 w-14 h-4 bg-secondary-fixed/80 rounded-sm -rotate-2 shadow-xs"></div>
+<div class="w-full h-44 rounded-xl overflow-hidden mb-3 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A dreamy cute pastel aesthetic artwork of a happy smiling girl with sparkling eyes laughing softly holding coffee cup in a charming pastel cafe with warm pink accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLopYz2KvFx0YtBon7AcYvnAIGSVc7u-if9tQ7HB3O6Q-zYPbVbra_-dYblz3hiuk0YP6kxHGVfVHnxjotgIpC77ymgY-k7NUvUGqkFLAPb9aM1H3QVqmXe4vXq1MDMIu7nDcUaS1YomDM47-NttlraIdnXT3UtZmtCQBrkJO6echr1XyveiqhHY6odUo4Ntc6JGMwEmNjDv4O0tVRV4lIImhzsAjI4e480S7Qyoou"/>
+</div>
+<p class="font-label-md text-label-md text-on-surface text-center px-1">
+          Waktu kamu ketawa denger lelucon garingku 🤭
+        </p>
+</div>
+<!-- Polaroid 3 -->
+<div class="relative bg-surface-container-lowest p-3 pb-5 rounded-2xl shadow-md transform -rotate-1 hover:rotate-0 transition-transform duration-300">
+<!-- Washi Tape -->
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 w-14 h-4 bg-tertiary-fixed/80 rounded-sm rotate-1 shadow-xs"></div>
+<div class="w-full h-44 rounded-xl overflow-hidden mb-3 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Pastel romantic watercolor scene of two sweet silhouettes sitting together on a grassy hill gazing at a dreamy cotton-candy pastel pink and sky blue sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAljPo07WjlNBXKiM20uRQcsKHE4tfE0fjf3ZWMxqFzklzORy216RjF8GnsFytbH2_t3Sht84uSZ6VsXsbDn1YbPxn6Kcb7ez3YDvENoFtM_yze8iqW0z7khdiZwn6JWXSQLv-M-EONbtsGLTqj6QjtWQeVn6JEGsSwy_rZtAhMNlzbflwPwHG7AV9ZSF4erJhRNzKbz-xJoJvOI4v7q92Wfejx2nsSCC8D0V3tLJg"/>
+</div>
+<p class="font-label-md text-label-md text-on-surface text-center px-1">
+          Duduk santai sambil liat langit senja 🌅
+        </p>
+</div>
+<!-- Polaroid 4 -->
+<div class="relative bg-surface-container-lowest p-3 pb-5 rounded-2xl shadow-md transform rotate-1 hover:rotate-0 transition-transform duration-300">
+<!-- Washi Tape -->
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 w-14 h-4 bg-secondary-container/80 rounded-sm -rotate-3 shadow-xs"></div>
+<div class="w-full h-44 rounded-xl overflow-hidden mb-3 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Soft luminous close up illustration of sweet sparkling eyes and a tender shy warm smile, surrounded by tiny floating pastel sparkles and gentle glowing hearts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhi2S6bQGPJiTNEQ_q-VQeEAgstxtGkMu-x1QWQ_BUWxkz4yEp1PrGc2BK-1AeLdHxyYVRMtJXWljCIRx6VIo1_xUkXc3HFd0Ev_m_9glLr3a1LGWirrnhsI5THFIPvoehzvdNJ6rvU0tqZXDeA1wwqWv2pyxGJ7tphVaqEasJH60jQ0CjRY4ZSWLmzlJoqLkACSXk7vuHJfIikUfff5IowUPhLQ8OXFcV1Lwyynuf"/>
+</div>
+<p class="font-label-md text-label-md text-on-surface text-center px-1">
+          Senyum kamu yang selalu bikin candu ✨
+        </p>
+</div>
+</div>
+</section>
+<!-- SECTION 4: REASONS I LIKE YOU -->
+<section class="flex flex-col space-y-4">
+<div class="text-center space-y-1">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-bold">Dari Lubuk Hati</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Kenapa Aku Suka Kamu? 💭</h2>
+</div>
+<!-- Reason Cards -->
+<div class="space-y-3">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest/80 backdrop-blur-md p-4 rounded-2xl shadow-sm flex items-start gap-3.5 transition-transform hover:-translate-y-0.5">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">mood</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface mb-0.5">Senyum Manismu 😊</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Binar mata dan senyum tulusmu otomatis mencerahkan hari paling berat sekalipun.</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest/80 backdrop-blur-md p-4 rounded-2xl shadow-sm flex items-start gap-3.5 transition-transform hover:-translate-y-0.5">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">sentiment_very_satisfied</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface mb-0.5">Cara Kamu Ketawa 🥰</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tawa lepasmu yang renyah dan nular itu suara favoritku yang nggak pernah membosankan.</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest/80 backdrop-blur-md p-4 rounded-2xl shadow-sm flex items-start gap-3.5 transition-transform hover:-translate-y-0.5">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">magic_button</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface mb-0.5">Kamu Bikin Hidup Lebih Berwarna ✨</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sederhana, tapi setiap ada kamu di dekatku, segalanya terasa jauh lebih indah dan nyaman.</p>
+</div>
+</div>
+</div>
+<!-- Reason counter pill -->
+<div class="flex justify-center pt-1">
+<div class="px-4 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm shadow-inner flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-primary" style="font-variation-settings: 'FILL' 1;">stars</span>
+        Dan masih ada 1.000 alasan manis lainnya... 💫
+      </div>
+</div>
+</section>
+<!-- SECTION 5: THE BIG QUESTION -->
+<section class="flex flex-col relative pt-4 pb-12" id="question-section">
+<!-- Big Heart Confession Card -->
+<div class="relative bg-surface-container-lowest/95 backdrop-blur-md rounded-3xl p-6 sm:p-8 shadow-2xl text-center flex flex-col items-center">
+<!-- Decorative Mascot from user attachment -->
+<div class="w-36 h-36 rounded-2xl overflow-hidden mb-3 drop-shadow-md transform hover:scale-105 transition-transform">
+<img class="w-full h-full object-contain" data-alt="A super cute fluffy white kawaii bunny with pastel pink ears and a blue ribbon bow holding a sparkling pink love letter envelope reading love you, sitting upon a soft pastel cloud with star sparkles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCqSFFexIgeksIoxgbH2jnXys_dH0uIcdraZqnmuPfxvp0hHjXYMeMOFaxpzkXLJhyhwqMJQRu-zaAQUwHwOlb5FYGyRVQdaVWlSWAjviZlyeWUnZfwkSFUBOCuUlKznC2n25wKPsyz0K6P-c1IibozQYS71D3AScVF9UpFUdvcFzA-toeJDDumIDFeOsol6K9GMfrTeLPCorGThZzbTLqTHTHDQFr7Rr32rGmBALY"/>
+</div>
+<!-- Big Kawaii Question Heading -->
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-2">
+        Maukah kamu jadi pacarku? 🥺👉👈
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs mb-8">
+        Menjadi teman ceritaku, teman tawaku, dan seseorang yang paling kusayangi setiap hari?
+      </p>
+<!-- The Dynamic Buttons Arena -->
+<div class="relative w-full min-h-[140px] flex flex-col items-center justify-center gap-4" id="buttons-arena">
+<!-- Big YES button -->
+<button class="relative z-10 w-full max-w-[220px] py-4 rounded-full bg-primary-container text-on-primary-container font-headline-sm text-headline-sm shadow-xl shadow-primary-container/60 hover:bg-primary hover:text-on-primary transition-all duration-300 transform active:scale-95 animate-pulse flex items-center justify-center gap-2" id="btn-yes">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">favorite</span>
+          Mau! 💖
+        </button>
+<!-- Dynamic evasive NO button -->
+<button class="z-20 px-6 py-2 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md shadow-sm transition-all duration-200" id="btn-no">
+          Hmm... nggak
+        </button>
+</div>
+</div>
+</section>
+<!-- Sticky Cute Bunny Peeking Mascot at bottom corner -->
+<aside class="fixed bottom-3 left-4 z-30 flex items-end pointer-events-none">
+<div class="bg-surface-container-lowest/90 backdrop-blur-sm px-3 py-1.5 rounded-2xl shadow-md text-on-surface font-label-sm text-label-sm mb-1 transform -rotate-2 pointer-events-auto border-none">
+      Semoga diterima yaa... hihi 🐰
+    </div>
+</aside>
+<!-- SECTION 6: CELEBRATION MODAL & FULL OVERLAY (HIDDEN BY DEFAULT) -->
+<dialog class="fixed inset-0 z-50 w-full h-full bg-on-surface/40 backdrop-blur-md p-4 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-500 m-0 max-w-none max-h-none border-none" id="celebration-dialog">
+<div class="relative bg-surface-container-lowest rounded-3xl p-6 sm:p-8 max-w-sm w-full text-center shadow-2xl flex flex-col items-center transform scale-90 transition-transform duration-500" id="celebration-card">
+<!-- Mascot celebratory photo -->
+<div class="w-40 h-40 rounded-2xl overflow-hidden mb-3 drop-shadow-lg">
+<img class="w-full h-full object-contain" data-alt="A super cute fluffy white kawaii bunny with pastel pink ears and a blue ribbon bow holding a sparkling pink love letter envelope reading love you, sitting upon a soft pastel cloud with star sparkles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9RdPYAENOWrlWVZRPCMTeaqzT9lGasvXj42tT6hwSZTXF6uooclcloJAZ8h1SZZMDMFgcWhrnGsOoSeMl49aYSC6PFdt03__se1uuLwiMou5DFgJrDoiIPfdjgDhshuRgBY9mkTj0CW-QKh4Iwt_83thsPP9CH5w2KJYukVEMvhAZUymErqX1QJXYCjHFzZBKaP_5e9VJ6D3e-2Ff6OWM_VnfBYxy8q--cCnYyX4w"/>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm mb-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">favorite</span>
+        Hari Paling Bahagia!
+      </div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">
+        Yeayyy! Makasih ya, Sayang! 💗🎉
+      </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+        Resmi pacaran! Aku janji bakal selalu berusaha bikin kamu tersenyum setiap hari. I love you so much! 🌸✨
+      </p>
+<!-- Action buttons -->
+<div class="flex flex-col w-full gap-2.5">
+<button class="w-full py-3.5 rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg shadow-md hover:bg-primary hover:text-on-primary transition-all flex items-center justify-center gap-2" id="btn-hug">
+<span class="material-symbols-outlined text-xl">favorite</span>
+          Peluk Online 🤗
+        </button>
+<button class="w-full py-2.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" id="btn-close-modal">
+          Tutup &amp; Simpan Momen Ini 💌
+        </button>
+</div>
+</div>
+</dialog>
+<!-- Interactive Particles Canvas Overlay -->
+<canvas class="fixed inset-0 pointer-events-none z-50" id="particle-canvas"></canvas>
+</div>
+<script>
+  (function () {
+    // Smooth scroll from envelope/hero button
+    const openBtn = document.getElementById('open-letter-btn');
+    const envelopeTrigger = document.getElementById('envelope-trigger');
+    const letterSection = document.getElementById('letter-section');
+
+    function scrollToLetter() {
+      createHeartBurst(window.innerWidth / 2, window.innerHeight / 2);
+      if (letterSection) {
+        letterSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    if (openBtn) openBtn.addEventListener('click', scrollToLetter);
+    if (envelopeTrigger) envelopeTrigger.addEventListener('click', scrollToLetter);
+
+    // Evasive "No" Button Logic
+    const btnNo = document.getElementById('btn-no');
+    const arena = document.getElementById('buttons-arena');
+    const funnyTexts = [
+      "Yakin nih? 🥺",
+      "Nggak bisa diklik lho! 😜",
+      "Pilih yang pink aja yaa 💕",
+      "Eits, meleset! 🙈",
+      "Coba pikir lagi deh~ 🌸",
+      "Harus bilang mau dong! ✨"
+    ];
+    let evadeCount = 0;
+
+    function dodgeNoButton(e) {
+      if (!btnNo || !arena) return;
+      evadeCount++;
+      const arenaRect = arena.getBoundingClientRect();
+      const maxX = arenaRect.width - btnNo.offsetWidth - 20;
+      const maxY = 60; // limit vertical jump within container
+
+      const randomX = (Math.random() - 0.5) * maxX;
+      const randomY = (Math.random() - 0.5) * maxY;
+
+      btnNo.style.transform = `translate(${randomX}px, ${randomY}px)`;
+      btnNo.textContent = funnyTexts[evadeCount % funnyTexts.length];
+
+      // Playful mini sparkle
+      const rect = btnNo.getBoundingClientRect();
+      createHeartBurst(rect.left + rect.width / 2, rect.top + rect.height / 2, 4);
+    }
+
+    if (btnNo) {
+      btnNo.addEventListener('mouseenter', dodgeNoButton);
+      btnNo.addEventListener('touchstart', function (e) {
+        e.preventDefault();
+        dodgeNoButton(e);
+      });
+      btnNo.addEventListener('click', function (e) {
+        e.preventDefault();
+        dodgeNoButton(e);
+      });
+    }
+
+    // Celebration Modal Trigger
+    const btnYes = document.getElementById('btn-yes');
+    const modal = document.getElementById('celebration-dialog');
+    const modalCard = document.getElementById('celebration-card');
+    const btnCloseModal = document.getElementById('btn-close-modal');
+    const btnHug = document.getElementById('btn-hug');
+
+    function launchCelebration() {
+      if (!modal) return;
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      modal.classList.add('opacity-100', 'pointer-events-auto');
+      if (modalCard) {
+        modalCard.classList.remove('scale-90');
+        modalCard.classList.add('scale-100');
+      }
+      // Big confetti burst
+      for (let i = 0; i < 5; i++) {
+        setTimeout(() => {
+          createHeartBurst(
+            Math.random() * window.innerWidth,
+            Math.random() * (window.innerHeight * 0.7),
+            25
+          );
+        }, i * 200);
+      }
+    }
+
+    if (btnYes) btnYes.addEventListener('click', launchCelebration);
+
+    if (btnCloseModal) {
+      btnCloseModal.addEventListener('click', function () {
+        if (!modal) return;
+        modal.classList.remove('opacity-100', 'pointer-events-auto');
+        modal.classList.add('opacity-0', 'pointer-events-none');
+        if (modalCard) {
+          modalCard.classList.remove('scale-100');
+          modalCard.classList.add('scale-90');
+        }
+      });
+    }
+
+    if (btnHug) {
+      btnHug.addEventListener('click', function () {
+        btnHug.textContent = 'Pelukan Terkirim! 💖🥰';
+        createHeartBurst(window.innerWidth / 2, window.innerHeight / 2, 40);
+        setTimeout(() => {
+          btnHug.innerHTML = '<span class="material-symbols-outlined text-xl">favorite</span> Peluk Lagi 🤗';
+        }, 2200);
+      });
+    }
+
+    // Tap Anywhere Heart Trail Micro-interaction
+    window.addEventListener('pointerdown', function (e) {
+      if (e.target.tagName !== 'BUTTON' && !e.target.closest('button')) {
+        createHeartBurst(e.clientX, e.clientY, 5);
+      }
+    });
+
+    // Music Charm Toggle
+    const musicBtn = document.getElementById('music-charm');
+    const musicIcon = document.getElementById('music-icon');
+    let isPlaying = false;
+
+    if (musicBtn && musicIcon) {
+      musicBtn.addEventListener('click', function () {
+        isPlaying = !isPlaying;
+        musicIcon.textContent = isPlaying ? 'music_off' : 'music_note';
+        musicBtn.classList.toggle('text-primary');
+        musicBtn.classList.toggle('text-on-surface-variant');
+        createHeartBurst(
+          musicBtn.getBoundingClientRect().left + 20,
+          musicBtn.getBoundingClientRect().top + 20,
+          8
+        );
+      });
+    }
+
+    // Canvas Confetti / Particle Engine
+    const canvas = document.getElementById('particle-canvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    const colors = ['#FF8FB8', '#FFB6D5', '#A7D8FF', '#6EC1FF', '#FFD8E6', '#FFF8FB'];
+
+    function createHeartBurst(x, y, count = 15) {
+      for (let i = 0; i < count; i++) {
+        const angle = Math.random() * Math.PI * 2;
+        const speed = Math.random() * 5 + 2;
+        particles.push({
+          x: x,
+          y: y,
+          vx: Math.cos(angle) * speed,
+          vy: Math.sin(angle) * speed - 1.5,
+          size: Math.random() * 8 + 6,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          alpha: 1,
+          decay: Math.random() * 0.02 + 0.015,
+          rotation: Math.random() * 360,
+          vRot: (Math.random() - 0.5) * 8
+        });
+      }
+    }
+
+    function drawHeart(x, y, size, color, alpha, rotation) {
+      ctx.save();
+      ctx.translate(x, y);
+      ctx.rotate((rotation * Math.PI) / 180);
+      ctx.globalAlpha = Math.max(0, alpha);
+      ctx.fillStyle = color;
+      ctx.beginPath();
+      const topCurveHeight = size * 0.3;
+      ctx.moveTo(0, topCurveHeight);
+      ctx.bezierCurveTo(0, 0, -size / 2, 0, -size / 2, topCurveHeight);
+      ctx.bezierCurveTo(-size / 2, (size + topCurveHeight) / 2, 0, (size + topCurveHeight) / 1.4, 0, size);
+      ctx.bezierCurveTo(0, (size + topCurveHeight) / 1.4, size / 2, (size + topCurveHeight) / 2, size / 2, topCurveHeight);
+      ctx.bezierCurveTo(size / 2, 0, 0, 0, 0, topCurveHeight);
+      ctx.closePath();
+      ctx.fill();
+      ctx.restore();
+    }
+
+    function animateParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (let i = particles.length - 1; i >= 0; i--) {
+        const p = particles[i];
+        p.x += p.vx;
+        p.y += p.vy;
+        p.vy += 0.08; // gravity
+        p.alpha -= p.decay;
+        p.rotation += p.vRot;
+
+        drawHeart(p.x, p.y, p.size, p.color, p.alpha, p.rotation);
+
+        if (p.alpha <= 0) {
+          particles.splice(i, 1);
+        }
+      }
+      requestAnimationFrame(animateParticles);
+    }
+    requestAnimationFrame(animateParticles);
+  })();
+</script></main></body></html>
