@@ -9,7 +9,7 @@ export default function Hero({ onOpenLetter }) {
   }
 
   return (
-    <section id="hero-section" className="relative flex flex-col items-center pt-3 text-center">
+    <section id="hero-section" className="relative flex flex-col items-center pt-3 pb-40 text-center">
       <div className="mb-4 flex items-center gap-2">
         <span className="inline-flex -rotate-2 items-center gap-1 rounded-full bg-primary-fixed px-3 py-1 font-label-sm text-label-sm text-on-primary-fixed shadow-sm">
           <Icon name="auto_awesome" className="text-[14px]" />

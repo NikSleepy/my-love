@@ -2,7 +2,7 @@ import Icon from './Icon.jsx'
 
 export default function Letter({ letterRef }) {
   return (
-    <section id="letter-section" ref={letterRef} className="relative flex flex-col pt-4">
+    <section id="letter-section" ref={letterRef} className="relative flex flex-col pt-4 pb-24">
       <div className="relative rounded-2xl bg-surface-container-lowest/90 p-6 shadow-xl backdrop-blur-md sm:p-7">
         <div className="absolute -left-3 -top-3 h-5 w-16 -rotate-12 rounded-sm bg-tertiary-fixed/80 shadow-sm" />
         <div className="absolute -right-3 -top-2 h-5 w-14 rotate-6 rounded-sm bg-secondary-fixed/80 shadow-sm" />
